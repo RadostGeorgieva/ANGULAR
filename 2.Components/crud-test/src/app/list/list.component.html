@@ -1,0 +1,11 @@
+<ul class="list-item">
+    <li>{{list.number}}</li>
+    <li *ngIf="!isEditing">{{list.description}}</li>
+    <li *ngIf="isEditing">
+        <input [(ngModel)]="list.description" />
+    </li>
+    <li>{{list.status}}</li>
+    <app-edit-button (edit)="handleEdit()"></app-edit-button>
+    <app-delete-button (delete)="deleteList()"></app-delete-button>
+    <button *ngIf="isEditing" (click)="saveEdit()">Save</button>
+</ul>

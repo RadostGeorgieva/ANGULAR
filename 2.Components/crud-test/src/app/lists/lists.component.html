@@ -1,0 +1,11 @@
+<ul>
+    <h2>To-Do App</h2>
+  
+    <app-list 
+      *ngFor="let item of lists" 
+      [list]="item" 
+      (delete)="handleDelete(item)" 
+      (edit)="handleEdit($event)">
+    </app-list>
+  </ul>
+  

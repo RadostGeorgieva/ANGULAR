@@ -4,7 +4,7 @@ import { ArticleData } from '../data/data';
 import { ArticleComponent } from '../article/article.component';
 
 @Component({
-  selector: 'app-articles',
+  selector: 'ng',
   standalone: true,
   imports: [ArticleComponent],
   templateUrl: './articles.component.html',
